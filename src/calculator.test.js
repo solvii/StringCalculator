@@ -1,5 +1,5 @@
 const add = require("./calculator");
 
-it("should ...", () => {
-    expect(add).toBe()
-} )
+it("should return zero on my empty string", () => {
+    expect(add("")).toBe(0);
+});
