@@ -21,4 +21,7 @@ it("should return the sum of two given numbers when using \n", () => {
     expect(add("1\n2, 3")).toBe(6);
 });
 
+it("should return a number higher than 1000 as 0 ", () => {
+    expect(add("1001, 2")).toBe(2);
+});
 
