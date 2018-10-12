@@ -18,7 +18,7 @@ it("should summarize multiple numbers", () => {
 });
 
 it("should return the sum of two given numbers when using \n", () => {
-    expect(add("1\n2,3")).toBe(6);
+    expect(add("1\n2, 3")).toBe(6);
 });
 
 

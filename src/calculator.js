@@ -2,6 +2,13 @@ function add(numbers){
   if(numbers == "")
   return 0;
 
+  if(numbers.includes("\n"))
+  {
+    var numberArray = numbers.split(/,|\n/g);
+    return sum(numberArray);
+  }
+
+
   if(numbers.includes(","))
   {
     var numberArray = numbers.split(/,|\n/g);
@@ -19,5 +26,6 @@ for (var i=0; i < numberArray.length; i++){
 }
 return total;
 }
+
 
 module.exports = add;
